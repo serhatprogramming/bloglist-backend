@@ -13,7 +13,6 @@ blogsRouter.post("/", async (request, response, next) => {
     const body = request.body;
 
     const user = request.user;
-
     const blog = new Blog({
       title: body.title,
       author: body.author,
